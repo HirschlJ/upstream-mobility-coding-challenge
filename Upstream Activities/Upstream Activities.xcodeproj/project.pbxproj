@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		791761242BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761232BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift */; };
-		791761262BEDE5E400E45AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761252BEDE5E400E45AE0 /* ContentView.swift */; };
+		791761262BEDE5E400E45AE0 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761252BEDE5E400E45AE0 /* ActivityView.swift */; };
 		791761282BEDE5E500E45AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791761272BEDE5E500E45AE0 /* Assets.xcassets */; };
 		7917612C2BEDE5E500E45AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917612B2BEDE5E500E45AE0 /* Preview Assets.xcassets */; };
 		791761362BEDE5E500E45AE0 /* UpstreamActivitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761352BEDE5E500E45AE0 /* UpstreamActivitiesTests.swift */; };
@@ -24,6 +24,8 @@
 		791761672BEDFD8C00E45AE0 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761662BEDFD8C00E45AE0 /* Activity.swift */; };
 		7917616A2BEE047E00E45AE0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 791761692BEE047E00E45AE0 /* Factory */; };
 		7917616D2BEE04AF00E45AE0 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917616C2BEE04AF00E45AE0 /* AppContainer.swift */; };
+		791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */; };
+		791761762BEE102400E45AE0 /* EquatableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761752BEE102400E45AE0 /* EquatableError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,7 @@
 /* Begin PBXFileReference section */
 		791761202BEDE5E400E45AE0 /* Upstream Activities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Upstream Activities.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791761232BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpstreamActivitiesApp.swift; sourceTree = "<group>"; };
-		791761252BEDE5E400E45AE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		791761252BEDE5E400E45AE0 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		791761272BEDE5E500E45AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		791761292BEDE5E500E45AE0 /* Upstream_Activities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Upstream_Activities.entitlements; sourceTree = "<group>"; };
 		7917612B2BEDE5E500E45AE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		791761612BEDFD5900E45AE0 /* GetActivityRessource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetActivityRessource.swift; sourceTree = "<group>"; };
 		791761662BEDFD8C00E45AE0 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		7917616C2BEE04AF00E45AE0 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		791761752BEE102400E45AE0 /* EquatableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +119,11 @@
 		791761222BEDE5E400E45AE0 /* Upstream Activities */ = {
 			isa = PBXGroup;
 			children = (
+				7917616F2BEE06FC00E45AE0 /* Styles */,
+				7917616E2BEE05A500E45AE0 /* Views */,
 				7917616B2BEE049D00E45AE0 /* DI */,
 				791761502BEDEC4A00E45AE0 /* API */,
 				791761272BEDE5E500E45AE0 /* Assets.xcassets */,
-				791761252BEDE5E400E45AE0 /* ContentView.swift */,
 				791761652BEDFD7C00E45AE0 /* Models */,
 				7917612A2BEDE5E500E45AE0 /* Preview Content */,
 				791761292BEDE5E500E45AE0 /* Upstream_Activities.entitlements */,
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				791761662BEDFD8C00E45AE0 /* Activity.swift */,
+				791761752BEE102400E45AE0 /* EquatableError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +194,22 @@
 				7917616C2BEE04AF00E45AE0 /* AppContainer.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		7917616E2BEE05A500E45AE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				791761252BEDE5E400E45AE0 /* ActivityView.swift */,
+				791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7917616F2BEE06FC00E45AE0 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +390,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				791761672BEDFD8C00E45AE0 /* Activity.swift in Sources */,
-				791761262BEDE5E400E45AE0 /* ContentView.swift in Sources */,
+				791761762BEE102400E45AE0 /* EquatableError.swift in Sources */,
+				791761262BEDE5E400E45AE0 /* ActivityView.swift in Sources */,
 				791761562BEDF27F00E45AE0 /* APIRessource.swift in Sources */,
 				791761582BEDF83700E45AE0 /* APIConstants.swift in Sources */,
 				7917615F2BEDFCC500E45AE0 /* ActivityAPI.swift in Sources */,
@@ -378,6 +401,7 @@
 				7917615D2BEDFBB000E45AE0 /* APIRequest.swift in Sources */,
 				791761622BEDFD5900E45AE0 /* GetActivityRessource.swift in Sources */,
 				791761522BEDEC7700E45AE0 /* APIError.swift in Sources */,
+				791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,10 +576,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "at.hirschl.Upstream-Activities";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,10 +615,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "at.hirschl.Upstream-Activities";
 				PRODUCT_NAME = "$(TARGET_NAME)";

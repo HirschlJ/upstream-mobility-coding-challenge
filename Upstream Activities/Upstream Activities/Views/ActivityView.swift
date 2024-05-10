@@ -1,13 +1,16 @@
 //
-//  ContentView.swift
+//  ActivityView.swift
 //  Upstream Activities
 //
 //  Created by Jakob Hirschl on 10.05.24.
 //
 
 import SwiftUI
+import Factory
 
-struct ContentView: View {
+struct ActivityView: View {
+    @State var viewModel: ActivityViewModel = Container.shared.activityViewModel()
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +23,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    let _ = Container.shared.activityViewModel.register { ActivityViewModel() }
+    return ActivityView()
 }

@@ -11,4 +11,8 @@ extension Container {
     var activityApi: Factory<ActivityAPI> {
         self { ActivityAPIImpl() }
     }
+
+    var activityViewModel: Factory<ActivityViewModel> {
+        self { ActivityViewModelImpl() }
+    }
 }
