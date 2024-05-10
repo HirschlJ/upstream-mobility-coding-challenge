@@ -22,6 +22,8 @@
 		7917615F2BEDFCC500E45AE0 /* ActivityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917615E2BEDFCC500E45AE0 /* ActivityAPI.swift */; };
 		791761622BEDFD5900E45AE0 /* GetActivityRessource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761612BEDFD5900E45AE0 /* GetActivityRessource.swift */; };
 		791761672BEDFD8C00E45AE0 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761662BEDFD8C00E45AE0 /* Activity.swift */; };
+		7917616A2BEE047E00E45AE0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 791761692BEE047E00E45AE0 /* Factory */; };
+		7917616D2BEE04AF00E45AE0 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917616C2BEE04AF00E45AE0 /* AppContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		7917615E2BEDFCC500E45AE0 /* ActivityAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAPI.swift; sourceTree = "<group>"; };
 		791761612BEDFD5900E45AE0 /* GetActivityRessource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetActivityRessource.swift; sourceTree = "<group>"; };
 		791761662BEDFD8C00E45AE0 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		7917616C2BEE04AF00E45AE0 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7917616A2BEE047E00E45AE0 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,10 +115,11 @@
 		791761222BEDE5E400E45AE0 /* Upstream Activities */ = {
 			isa = PBXGroup;
 			children = (
-				791761652BEDFD7C00E45AE0 /* Models */,
+				7917616B2BEE049D00E45AE0 /* DI */,
 				791761502BEDEC4A00E45AE0 /* API */,
 				791761272BEDE5E500E45AE0 /* Assets.xcassets */,
 				791761252BEDE5E400E45AE0 /* ContentView.swift */,
+				791761652BEDFD7C00E45AE0 /* Models */,
 				7917612A2BEDE5E500E45AE0 /* Preview Content */,
 				791761292BEDE5E500E45AE0 /* Upstream_Activities.entitlements */,
 				791761232BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift */,
@@ -177,6 +182,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7917616B2BEE049D00E45AE0 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7917616C2BEE04AF00E45AE0 /* AppContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +207,9 @@
 			dependencies = (
 			);
 			name = "Upstream Activities";
+			packageProductDependencies = (
+				791761692BEE047E00E45AE0 /* Factory */,
+			);
 			productName = "Upstream Activities";
 			productReference = 791761202BEDE5E400E45AE0 /* Upstream Activities.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +283,9 @@
 				Base,
 			);
 			mainGroup = 791761172BEDE5E400E45AE0;
+			packageReferences = (
+				791761682BEE047E00E45AE0 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = 791761212BEDE5E400E45AE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +373,7 @@
 				791761582BEDF83700E45AE0 /* APIConstants.swift in Sources */,
 				7917615F2BEDFCC500E45AE0 /* ActivityAPI.swift in Sources */,
 				791761242BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift in Sources */,
+				7917616D2BEE04AF00E45AE0 /* AppContainer.swift in Sources */,
 				791761542BEDED2400E45AE0 /* NetworkRequest.swift in Sources */,
 				7917615D2BEDFBB000E45AE0 /* APIRequest.swift in Sources */,
 				791761622BEDFD5900E45AE0 /* GetActivityRessource.swift in Sources */,
@@ -718,6 +738,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		791761682BEE047E00E45AE0 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		791761692BEE047E00E45AE0 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 791761682BEE047E00E45AE0 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 791761182BEDE5E400E45AE0 /* Project object */;
 }
