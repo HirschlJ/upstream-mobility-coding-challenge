@@ -12,7 +12,7 @@ struct UpstreamActivitiesApp: App {
     var body: some Scene {
         WindowGroup {
             if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-                Text("Unit Testing!")
+                Text("placeholder_unit_testing")
             } else {
                 ActivityView()
             }

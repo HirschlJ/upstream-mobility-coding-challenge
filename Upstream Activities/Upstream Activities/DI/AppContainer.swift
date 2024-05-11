@@ -6,8 +6,13 @@
 //
 
 import Factory
+import Foundation
 
 extension Container {
+    var urlSession: Factory<URLSessionAPI> {
+        self { URLSession.shared }
+    }
+
     var activityApi: Factory<ActivityAPI> {
         self { ActivityAPIImpl() }
     }

@@ -11,6 +11,8 @@ import Foundation
 protocol NetworkRequest: AnyObject {
     associatedtype ResponseModelType: Decodable
 
+    var urlSession: URLSessionAPI { get }
+
     /// Function called on decoding data returned by the request
     func decode(_ data: Data) throws -> ResponseModelType
     /// Executes this NetworkRequest
@@ -27,10 +29,7 @@ extension NetworkRequest {
         let data: Data
         let urlRespose: URLResponse
         do {
-            let sessionConfig = URLSessionConfiguration.default
-            sessionConfig.timeoutIntervalForRequest = 10.0
-            sessionConfig.timeoutIntervalForResource = 10.0
-            (data, urlRespose) = try await URLSession(configuration: sessionConfig).data(for: request)
+            (data, urlRespose) = try await urlSession.data(for: request)
         } catch {
             throw APIError.transportError(error)
         }
@@ -45,7 +44,7 @@ extension NetworkRequest {
     /// - Throws: ``APIError/serverError(_:_:)`` if the status code of the response does not signal success.
     func handleResponse(_ data: Data, _ urlRespose: HTTPURLResponse) throws -> ResponseModelType {
         guard(200...299).contains(urlRespose.statusCode) else {
-            throw APIError.serverError(urlRespose.statusCode, urlRespose.description)
+            throw APIError.serverError(urlRespose.statusCode, String(bytes: data, encoding: .utf8) ?? "")
         }
 
         do {

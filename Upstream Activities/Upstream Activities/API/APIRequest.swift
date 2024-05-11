@@ -5,9 +5,12 @@
 //  Created by Jakob Hirschl on 10.05.24.
 //
 
+import Factory
 import Foundation
 
 class APIRequest<Ressource: APIRessource> {
+    @Injected(\.urlSession) var urlSession: URLSessionAPI
+
     let ressource: Ressource
 
     init(ressource: Ressource) {

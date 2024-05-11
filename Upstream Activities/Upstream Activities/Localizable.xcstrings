@@ -13,9 +13,6 @@
       }
     },
     "alert_activity_message_parsing" : {
-
-    },
-    "alert_activity_message_parsing_error" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -66,6 +63,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get new suggestion!"
+          }
+        }
+      }
+    },
+    "placeholder_unit_testing" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unit Testing!"
           }
         }
       }

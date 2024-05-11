@@ -9,7 +9,7 @@ import Foundation
 
 /// Model describing an activity returned by https://www.boredapi.com
 /// Description of the parameters was taken from https://www.boredapi.com/documentation#endpoints-accessibility
-struct Activity: Decodable, Equatable {
+struct Activity: Codable, Equatable {
     /// Description of the queried activity
     let activity: String
     /// Type of the activity 
