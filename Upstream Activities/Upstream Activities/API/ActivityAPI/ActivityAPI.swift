@@ -11,11 +11,11 @@ import Foundation
 protocol ActivityAPI {
     /// Returns a random activity from https://www.boredapi.com/activity
     /// - Parameter activityType: If set, only activities of the given type will be returned.
-    func getActivity(activityType: String?) async throws -> Activity
+    func getActivity(activityType: ActivityType?) async throws -> Activity
 }
 
 class ActivityAPIImpl: ActivityAPI {
-    func getActivity(activityType: String?) async throws -> Activity {
-        return try await APIRequest(ressource: GetActivityRessource(activityType: activityType)).execute()
+    func getActivity(activityType: ActivityType?) async throws -> Activity {
+        return try await APIRequest(ressource: GetActivityRessource(activityType: activityType?.rawValue)).execute()
     }
 }

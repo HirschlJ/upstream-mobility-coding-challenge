@@ -37,13 +37,13 @@ class ActivityViewModelImpl: ActivityViewModel {
 
     override func fetchNewActivity(activityType: ActivityType?) {
         activityViewState = .loading
-        Task(priority: .userInitiated) {
+        Task {
             do {
-                try await Task.sleep(for: .seconds(2))
-                let fetchedActivity = try await activityAPI.getActivity(activityType: activityType?.rawValue)
+                // try await Task.sleep(for: .seconds(2))
+                let fetchedActivity = try await activityAPI.getActivity(activityType: activityType)
                 DispatchQueue.main.sync {
-                    activityViewState = .success
                     activity = fetchedActivity
+                    activityViewState = .success
                 }
             } catch {
                 DispatchQueue.main.sync {
