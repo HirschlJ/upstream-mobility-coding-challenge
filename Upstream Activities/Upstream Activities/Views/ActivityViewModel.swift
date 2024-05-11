@@ -24,17 +24,23 @@ class ActivityViewModel {
 
     fileprivate(set) var activity: Activity?
 
-    func fetchNewActivity(activityType: String?) { }
+    init(activityViewState: ActivityViewState = .loading, activity: Activity? = nil) {
+        self.activityViewState = activityViewState
+        self.activity = activity
+    }
+
+    func fetchNewActivity(activityType: ActivityType?) { }
 }
 
 class ActivityViewModelImpl: ActivityViewModel {
     @Injected(\.activityApi) var activityAPI: ActivityAPI
 
-    override func fetchNewActivity(activityType: String?) {
+    override func fetchNewActivity(activityType: ActivityType?) {
         activityViewState = .loading
         Task(priority: .userInitiated) {
             do {
-                let fetchedActivity = try await activityAPI.getActivity(activityType: activityType)
+                try await Task.sleep(for: .seconds(2))
+                let fetchedActivity = try await activityAPI.getActivity(activityType: activityType?.rawValue)
                 DispatchQueue.main.sync {
                     activityViewState = .success
                     activity = fetchedActivity

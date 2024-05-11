@@ -14,7 +14,7 @@ struct Activity: Decodable, Equatable {
     let activity: String
     /// Type of the activity 
     /// ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"]
-    let type: String
+    let type: ActivityType
     /// The number of people that this activity could involve [0, n]
     let participants: Int
     /// A factor describing the cost of the event with zero being free [0, 1]

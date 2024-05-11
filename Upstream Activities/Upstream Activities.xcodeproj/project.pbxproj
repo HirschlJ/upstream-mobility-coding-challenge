@@ -10,7 +10,6 @@
 		791761242BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761232BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift */; };
 		791761262BEDE5E400E45AE0 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761252BEDE5E400E45AE0 /* ActivityView.swift */; };
 		791761282BEDE5E500E45AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791761272BEDE5E500E45AE0 /* Assets.xcassets */; };
-		7917612C2BEDE5E500E45AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917612B2BEDE5E500E45AE0 /* Preview Assets.xcassets */; };
 		791761362BEDE5E500E45AE0 /* UpstreamActivitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761352BEDE5E500E45AE0 /* UpstreamActivitiesTests.swift */; };
 		791761402BEDE5E500E45AE0 /* UpstreamActivitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917613F2BEDE5E500E45AE0 /* UpstreamActivitiesUITests.swift */; };
 		791761422BEDE5E500E45AE0 /* UpstreamActivitiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761412BEDE5E500E45AE0 /* UpstreamActivitiesUITestsLaunchTests.swift */; };
@@ -26,6 +25,12 @@
 		7917616D2BEE04AF00E45AE0 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917616C2BEE04AF00E45AE0 /* AppContainer.swift */; };
 		791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */; };
 		791761762BEE102400E45AE0 /* EquatableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761752BEE102400E45AE0 /* EquatableError.swift */; };
+		795BD8D42BEF4DF90024D0D0 /* RadingSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */; };
+		795BD8D62BEF50E40024D0D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 795BD8D52BEF50E40024D0D0 /* Localizable.xcstrings */; };
+		795BD8D82BEF584A0024D0D0 /* ActivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */; };
+		795BD8DB2BEF5C9C0024D0D0 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8DA2BEF5C9C0024D0D0 /* ActivityType.swift */; };
+		795BD8DD2BEF8DEB0024D0D0 /* MaterialButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8DC2BEF8DEA0024D0D0 /* MaterialButtonStyle.swift */; };
+		795BD8DF2BEFA4D00024D0D0 /* ActivityTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +56,6 @@
 		791761252BEDE5E400E45AE0 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		791761272BEDE5E500E45AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		791761292BEDE5E500E45AE0 /* Upstream_Activities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Upstream_Activities.entitlements; sourceTree = "<group>"; };
-		7917612B2BEDE5E500E45AE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		791761312BEDE5E500E45AE0 /* Upstream ActivitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Upstream ActivitiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791761352BEDE5E500E45AE0 /* UpstreamActivitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpstreamActivitiesTests.swift; sourceTree = "<group>"; };
 		7917613B2BEDE5E500E45AE0 /* Upstream ActivitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Upstream ActivitiesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,12 @@
 		7917616C2BEE04AF00E45AE0 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		791761752BEE102400E45AE0 /* EquatableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableError.swift; sourceTree = "<group>"; };
+		795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadingSliderView.swift; sourceTree = "<group>"; };
+		795BD8D52BEF50E40024D0D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoadingView.swift; sourceTree = "<group>"; };
+		795BD8DA2BEF5C9C0024D0D0 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		795BD8DC2BEF8DEA0024D0D0 /* MaterialButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButtonStyle.swift; sourceTree = "<group>"; };
+		795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,10 @@
 		791761172BEDE5E400E45AE0 = {
 			isa = PBXGroup;
 			children = (
+				791761212BEDE5E400E45AE0 /* Products */,
 				791761222BEDE5E400E45AE0 /* Upstream Activities */,
 				791761342BEDE5E500E45AE0 /* Upstream ActivitiesTests */,
 				7917613E2BEDE5E500E45AE0 /* Upstream ActivitiesUITests */,
-				791761212BEDE5E400E45AE0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,25 +129,17 @@
 		791761222BEDE5E400E45AE0 /* Upstream Activities */ = {
 			isa = PBXGroup;
 			children = (
+				791761502BEDEC4A00E45AE0 /* API */,
+				7917616B2BEE049D00E45AE0 /* DI */,
+				791761652BEDFD7C00E45AE0 /* Models */,
 				7917616F2BEE06FC00E45AE0 /* Styles */,
 				7917616E2BEE05A500E45AE0 /* Views */,
-				7917616B2BEE049D00E45AE0 /* DI */,
-				791761502BEDEC4A00E45AE0 /* API */,
-				791761272BEDE5E500E45AE0 /* Assets.xcassets */,
-				791761652BEDFD7C00E45AE0 /* Models */,
-				7917612A2BEDE5E500E45AE0 /* Preview Content */,
-				791761292BEDE5E500E45AE0 /* Upstream_Activities.entitlements */,
 				791761232BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift */,
+				791761292BEDE5E500E45AE0 /* Upstream_Activities.entitlements */,
+				791761272BEDE5E500E45AE0 /* Assets.xcassets */,
+				795BD8D52BEF50E40024D0D0 /* Localizable.xcstrings */,
 			);
 			path = "Upstream Activities";
-			sourceTree = "<group>";
-		};
-		7917612A2BEDE5E500E45AE0 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7917612B2BEDE5E500E45AE0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		791761342BEDE5E500E45AE0 /* Upstream ActivitiesTests */ = {
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				791761662BEDFD8C00E45AE0 /* Activity.swift */,
+				795BD8DA2BEF5C9C0024D0D0 /* ActivityType.swift */,
 				791761752BEE102400E45AE0 /* EquatableError.swift */,
 			);
 			path = Models;
@@ -199,6 +202,7 @@
 		7917616E2BEE05A500E45AE0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				795BD8D92BEF59010024D0D0 /* Components */,
 				791761252BEDE5E400E45AE0 /* ActivityView.swift */,
 				791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */,
 			);
@@ -208,8 +212,19 @@
 		7917616F2BEE06FC00E45AE0 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				795BD8DC2BEF8DEA0024D0D0 /* MaterialButtonStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		795BD8D92BEF59010024D0D0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */,
+				795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */,
+				795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,8 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7917612C2BEDE5E500E45AE0 /* Preview Assets.xcassets in Resources */,
 				791761282BEDE5E500E45AE0 /* Assets.xcassets in Resources */,
+				795BD8D62BEF50E40024D0D0 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,14 +408,19 @@
 				791761762BEE102400E45AE0 /* EquatableError.swift in Sources */,
 				791761262BEDE5E400E45AE0 /* ActivityView.swift in Sources */,
 				791761562BEDF27F00E45AE0 /* APIRessource.swift in Sources */,
+				795BD8DF2BEFA4D00024D0D0 /* ActivityTypePicker.swift in Sources */,
 				791761582BEDF83700E45AE0 /* APIConstants.swift in Sources */,
 				7917615F2BEDFCC500E45AE0 /* ActivityAPI.swift in Sources */,
 				791761242BEDE5E400E45AE0 /* UpstreamActivitiesApp.swift in Sources */,
 				7917616D2BEE04AF00E45AE0 /* AppContainer.swift in Sources */,
+				795BD8DD2BEF8DEB0024D0D0 /* MaterialButtonStyle.swift in Sources */,
+				795BD8D82BEF584A0024D0D0 /* ActivityLoadingView.swift in Sources */,
 				791761542BEDED2400E45AE0 /* NetworkRequest.swift in Sources */,
 				7917615D2BEDFBB000E45AE0 /* APIRequest.swift in Sources */,
 				791761622BEDFD5900E45AE0 /* GetActivityRessource.swift in Sources */,
+				795BD8DB2BEF5C9C0024D0D0 /* ActivityType.swift in Sources */,
 				791761522BEDEC7700E45AE0 /* APIError.swift in Sources */,
+				795BD8D42BEF4DF90024D0D0 /* RadingSliderView.swift in Sources */,
 				791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +580,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Upstream Activities/Upstream_Activities.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Upstream Activities/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FPXU8SSFK4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -599,7 +619,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Upstream Activities/Upstream_Activities.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Upstream Activities/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FPXU8SSFK4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
