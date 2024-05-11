@@ -37,6 +37,11 @@ final class ActivityAPITests: XCTestCase {
         api = ActivityAPIImpl()
     }
 
+    override func tearDownWithError() throws {
+        Container.shared.reset()
+        reset(urlSession)
+    }
+
     private func getResponse(with statusCode: Int) -> HTTPURLResponse {
         return HTTPURLResponse(
             url: expectedURL,

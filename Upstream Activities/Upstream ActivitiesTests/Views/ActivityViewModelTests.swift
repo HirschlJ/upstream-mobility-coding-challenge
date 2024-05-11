@@ -33,6 +33,7 @@ final class ActivityViewModelTests: XCTestCase {
 
     override func tearDownWithError() throws {
         Container.shared.reset()
+        reset(activityAPI)
     }
 
     private func awaitFetchActivity() {
