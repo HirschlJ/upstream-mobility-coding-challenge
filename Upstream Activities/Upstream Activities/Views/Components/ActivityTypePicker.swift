@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view that allows to pick an ``ActivityType`` or all activity types (nil).
 struct ActivityTypePicker: View {
     @Binding var activityType: ActivityType?
 

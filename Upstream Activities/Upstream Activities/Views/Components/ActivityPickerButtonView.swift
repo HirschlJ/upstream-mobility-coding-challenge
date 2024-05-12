@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View displaying the activity type picker and button to fetch a new activity.
 struct ActivityPickerButtonView: View {
     @State private var activityType: ActivityType?
 

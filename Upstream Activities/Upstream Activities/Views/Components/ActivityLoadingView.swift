@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view that shows that an activity is getting fetched from the api.
 struct ActivityLoadingView: View {
     @Environment(\.colorScheme) var colorScheme
 

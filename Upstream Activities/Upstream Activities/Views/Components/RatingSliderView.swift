@@ -1,5 +1,5 @@
 //
-//  RadingSliderView.swift
+//  RatingSliderView.swift
 //  Upstream Activities
 //
 //  Created by Jakob Hirschl on 11.05.24.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct RadingSliderView: View {
+/// A view that shows a rating between 0 and 1 in a slider like visualization.
+/// The given label is shown above the visualization.
+struct RatingSliderView: View {
     let label: LocalizedStringKey
     let rating: Double
 
@@ -38,7 +40,7 @@ struct RadingSliderView: View {
 }
 
 #Preview {
-    RadingSliderView(
+    RatingSliderView(
         label: "txt_activity_price \(0.5)", rating: 0.5
     )
 }

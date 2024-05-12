@@ -24,7 +24,7 @@
 		7917616D2BEE04AF00E45AE0 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917616C2BEE04AF00E45AE0 /* AppContainer.swift */; };
 		791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */; };
 		791761762BEE102400E45AE0 /* EquatableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791761752BEE102400E45AE0 /* EquatableError.swift */; };
-		795BD8D42BEF4DF90024D0D0 /* RadingSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */; };
+		795BD8D42BEF4DF90024D0D0 /* RatingSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8D32BEF4DF90024D0D0 /* RatingSliderView.swift */; };
 		795BD8D62BEF50E40024D0D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 795BD8D52BEF50E40024D0D0 /* Localizable.xcstrings */; };
 		795BD8D82BEF584A0024D0D0 /* ActivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */; };
 		795BD8DB2BEF5C9C0024D0D0 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8DA2BEF5C9C0024D0D0 /* ActivityType.swift */; };
@@ -79,7 +79,7 @@
 		7917616C2BEE04AF00E45AE0 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		791761702BEE0A6100E45AE0 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		791761752BEE102400E45AE0 /* EquatableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableError.swift; sourceTree = "<group>"; };
-		795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadingSliderView.swift; sourceTree = "<group>"; };
+		795BD8D32BEF4DF90024D0D0 /* RatingSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingSliderView.swift; sourceTree = "<group>"; };
 		795BD8D52BEF50E40024D0D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoadingView.swift; sourceTree = "<group>"; };
 		795BD8DA2BEF5C9C0024D0D0 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */,
-				795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */,
+				795BD8D32BEF4DF90024D0D0 /* RatingSliderView.swift */,
 				795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */,
 				798767992BF091C9009BA88F /* ActivityBodyView.swift */,
 				7987679B2BF09792009BA88F /* ActivityPickerButtonView.swift */,
@@ -494,7 +494,7 @@
 				791761622BEDFD5900E45AE0 /* GetActivityRessource.swift in Sources */,
 				795BD8DB2BEF5C9C0024D0D0 /* ActivityType.swift in Sources */,
 				791761522BEDEC7700E45AE0 /* APIError.swift in Sources */,
-				795BD8D42BEF4DF90024D0D0 /* RadingSliderView.swift in Sources */,
+				795BD8D42BEF4DF90024D0D0 /* RatingSliderView.swift in Sources */,
 				79DB26552BEFC16C00C1373B /* URLSessionAPI.swift in Sources */,
 				791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */,
 				7987679A2BF091C9009BA88F /* ActivityBodyView.swift in Sources */,

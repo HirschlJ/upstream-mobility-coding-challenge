@@ -20,15 +20,24 @@ class ActivityViewModel {
         }
     }
 
+    /// Whether or not the alert should be displayed.
+    /// Automatically set to true if ``activityViewState``is set to ``ActivityViewState/error(_:)``.
+    /// Setting this value will not influence ``activityViewState``.
     var showAlert: Bool = false
 
+    /// The ``Activity`` that should be displayed or nil if no activity was fetched yet.
     fileprivate(set) var activity: Activity?
 
+    /// Convenience intializer for previews.
     init(activityViewState: ActivityViewState = .loading, activity: Activity? = nil) {
         self.activityViewState = activityViewState
         self.activity = activity
     }
 
+    /// Fetches a new activity.
+    /// The state of fetching the activity is emitted via ``activityViewState``.
+    /// The fetched activity will be emitted via ``activity``.
+    /// - Parameter activityType: The desired ``Activity/type``  of the fetched activity or nil for any type.
     func fetchNewActivity(activityType: ActivityType?) { }
 }
 

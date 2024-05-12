@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View displaying a single ``Activity``.
 struct ActivityBodyView: View {
     let activity: Activity
     var body: some View {
@@ -21,12 +22,12 @@ struct ActivityBodyView: View {
 
             Text("txt_activity_participants \(activity.participants)")
 
-            RadingSliderView(
+            RatingSliderView(
                 label: "txt_activity_accessibility \(activity.accessibility)",
                 rating: activity.accessibility
             )
 
-            RadingSliderView(
+            RatingSliderView(
                 label: "txt_activity_price \(activity.price)",
                 rating: activity.price
             )
