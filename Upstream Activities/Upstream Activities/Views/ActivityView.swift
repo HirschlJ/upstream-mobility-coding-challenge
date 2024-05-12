@@ -12,49 +12,35 @@ struct ActivityView: View {
     @State var viewModel: ActivityViewModel = Container.shared.activityViewModel()
     @State var activityType: ActivityType?
 
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+
     var body: some View {
         ZStack {
-            if viewModel.activityViewState == .loading {
-                ActivityLoadingView()
-            }
-
-            VStack(alignment: .leading, spacing: 16) {
+            VStack {
                 if let activity = viewModel.activity {
-                    Text("txt_activity_headline")
-                        .font(.headline)
-
-                    Text(activity.activity)
-                        .font(.title)
-
-                    Text("txt_activity_type \(activity.type.rawValue)")
-
-                    Text("txt_activity_participants \(activity.participants)")
-
-                    RadingSliderView(
-                        label: "txt_activity_accessibility \(activity.accessibility)",
-                        rating: activity.accessibility
-                    )
-
-                    RadingSliderView(
-                        label: "txt_activity_price \(activity.price)",
-                        rating: activity.price
-                    )
+                    if verticalSizeClass == .compact {
+                        ScrollView {
+                            ActivityBodyView(activity: activity)
+                        }
+                    } else {
+                        ActivityBodyView(activity: activity)
+                    }
                 }
 
                 Spacer()
 
-                VStack {
-                    ActivityTypePicker(activityType: $activityType)
-                        .disabled(viewModel.activityViewState == .loading)
-
-                    Button {
-                        viewModel.fetchNewActivity(activityType: activityType)
-                    } label: {
-                        Text("btn_activity_fetch")
+                if horizontalSizeClass == .regular || verticalSizeClass == .compact && horizontalSizeClass == .compact {
+                    HStack(spacing: 32) {
+                        ActivityPickerButtonView(viewModel: viewModel)
                     }
-                    .buttonStyle(MaterialButtonStyle())
-                    .disabled(viewModel.activityViewState == .loading)
-                }.frame(maxWidth: .infinity)
+                } else {
+                    ActivityPickerButtonView(viewModel: viewModel)
+                }
+            }
+
+            if viewModel.activityViewState == .loading {
+                ActivityLoadingView()
             }
         }
         .padding()

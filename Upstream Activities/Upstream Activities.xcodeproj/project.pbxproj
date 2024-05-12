@@ -31,6 +31,8 @@
 		795BD8DD2BEF8DEB0024D0D0 /* MaterialButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8DC2BEF8DEA0024D0D0 /* MaterialButtonStyle.swift */; };
 		795BD8DF2BEFA4D00024D0D0 /* ActivityTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */; };
 		795BD8E22BEFA8490024D0D0 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 795BD8E12BEFA8490024D0D0 /* Mockingbird */; };
+		7987679A2BF091C9009BA88F /* ActivityBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798767992BF091C9009BA88F /* ActivityBodyView.swift */; };
+		7987679C2BF09792009BA88F /* ActivityPickerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987679B2BF09792009BA88F /* ActivityPickerButtonView.swift */; };
 		79DB26502BEFAE1A00C1373B /* ActivityViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB264F2BEFAE1A00C1373B /* ActivityViewModelTests.swift */; };
 		79DB26532BEFBDB600C1373B /* ActivityAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB26522BEFBDB600C1373B /* ActivityAPITests.swift */; };
 		79DB26552BEFC16C00C1373B /* URLSessionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB26542BEFC16C00C1373B /* URLSessionAPI.swift */; };
@@ -83,6 +85,8 @@
 		795BD8DA2BEF5C9C0024D0D0 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		795BD8DC2BEF8DEA0024D0D0 /* MaterialButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButtonStyle.swift; sourceTree = "<group>"; };
 		795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypePicker.swift; sourceTree = "<group>"; };
+		798767992BF091C9009BA88F /* ActivityBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBodyView.swift; sourceTree = "<group>"; };
+		7987679B2BF09792009BA88F /* ActivityPickerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPickerButtonView.swift; sourceTree = "<group>"; };
 		79DB264F2BEFAE1A00C1373B /* ActivityViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModelTests.swift; sourceTree = "<group>"; };
 		79DB26522BEFBDB600C1373B /* ActivityAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAPITests.swift; sourceTree = "<group>"; };
 		79DB26542BEFC16C00C1373B /* URLSessionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPI.swift; sourceTree = "<group>"; };
@@ -245,6 +249,8 @@
 				795BD8D72BEF584A0024D0D0 /* ActivityLoadingView.swift */,
 				795BD8D32BEF4DF90024D0D0 /* RadingSliderView.swift */,
 				795BD8DE2BEFA4D00024D0D0 /* ActivityTypePicker.swift */,
+				798767992BF091C9009BA88F /* ActivityBodyView.swift */,
+				7987679B2BF09792009BA88F /* ActivityPickerButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 				795BD8DD2BEF8DEB0024D0D0 /* MaterialButtonStyle.swift in Sources */,
 				795BD8D82BEF584A0024D0D0 /* ActivityLoadingView.swift in Sources */,
 				791761542BEDED2400E45AE0 /* NetworkRequest.swift in Sources */,
+				7987679C2BF09792009BA88F /* ActivityPickerButtonView.swift in Sources */,
 				7917615D2BEDFBB000E45AE0 /* APIRequest.swift in Sources */,
 				791761622BEDFD5900E45AE0 /* GetActivityRessource.swift in Sources */,
 				795BD8DB2BEF5C9C0024D0D0 /* ActivityType.swift in Sources */,
@@ -490,6 +497,7 @@
 				795BD8D42BEF4DF90024D0D0 /* RadingSliderView.swift in Sources */,
 				79DB26552BEFC16C00C1373B /* URLSessionAPI.swift in Sources */,
 				791761712BEE0A6100E45AE0 /* ActivityViewModel.swift in Sources */,
+				7987679A2BF091C9009BA88F /* ActivityBodyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
