@@ -9,8 +9,7 @@ import SwiftUI
 
 /// View displaying the activity type picker and button to fetch a new activity.
 struct ActivityPickerButtonView: View {
-    @State private var activityType: ActivityType?
-
+    @Binding var activityType: ActivityType?
     var viewModel: ActivityViewModel
 
     var body: some View {
@@ -28,5 +27,8 @@ struct ActivityPickerButtonView: View {
 }
 
 #Preview {
-    ActivityPickerButtonView(viewModel: ActivityViewModel())
+    ActivityPickerButtonView(
+        activityType: .constant(.busywork),
+        viewModel: ActivityViewModel()
+    )
 }

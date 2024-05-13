@@ -32,10 +32,16 @@ struct ActivityView: View {
 
                 if horizontalSizeClass == .regular || verticalSizeClass == .compact && horizontalSizeClass == .compact {
                     HStack(spacing: 32) {
-                        ActivityPickerButtonView(viewModel: viewModel)
+                        ActivityPickerButtonView(
+                            activityType: $activityType,
+                            viewModel: viewModel
+                        )
                     }
                 } else {
-                    ActivityPickerButtonView(viewModel: viewModel)
+                    ActivityPickerButtonView(
+                        activityType: $activityType,
+                        viewModel: viewModel
+                    )
                 }
             }
 
