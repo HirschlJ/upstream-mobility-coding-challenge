@@ -1,0 +1,24 @@
+{
+  "originHash" : "4b524ad0715fa2939b93e046fb053f5bfaf6220a75e5587cc8588f395bfec841",
+  "pins" : [
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "587995f7d5cc667951d635fbf6b4252324ba0439",
+        "version" : "2.3.2"
+      }
+    },
+    {
+      "identity" : "mockingbird",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/birdrides/mockingbird",
+      "state" : {
+        "revision" : "6e0d473df6b975719e145f6aebf90990c634700e",
+        "version" : "0.20.0"
+      }
+    }
+  ],
+  "version" : 3
+}

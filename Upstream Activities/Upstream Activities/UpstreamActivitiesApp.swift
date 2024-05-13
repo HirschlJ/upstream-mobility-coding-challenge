@@ -11,7 +11,11 @@ import SwiftUI
 struct UpstreamActivitiesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+                Text("placeholder_unit_testing")
+            } else {
+                ActivityView()
+            }
         }
     }
 }
